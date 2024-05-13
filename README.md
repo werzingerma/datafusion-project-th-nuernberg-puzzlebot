@@ -1,6 +1,6 @@
-# Problemanalyse --> Puzzlebot LiDAR
+# Puzzlebot --> LiDAR-Problem
 
-# Erklareung
+# Explanation
 * The Problem is that the Jetson Nano Board cant get Data from the conected LiDAR-Sensor. If connected and used trough ros2 with the Standard LiDAR-Node we get the Errors: TIMEOUT or Healthcode 80008003.
     * ros2 launch rplidar_ros rplidar_a1_launch.py serial_baudrate:=115200
     * also tried various baudrates and options we can set trough the launch file
