@@ -1,7 +1,7 @@
 # Puzzlebot --> LiDAR-Problem
 
 # Explanation
-* The Problem is that the Jetson Nano Board cant get Data from the conected LiDAR-Sensor. If connected and used trough ros2 with the Standard LiDAR-Node we get the Errors: TIMEOUT or Healthcode 80008003.
+* The Problem is that the Jetson Nano Board cant get Data from the conected LiDAR-Sensor. If connected and used trough ros2 with the Standard LiDAR-Node we get the Errors: TIMEOUT or Healthcode 80008002.
     * ros2 launch rplidar_ros rplidar_a1_launch.py serial_baudrate:=115200
     * also tried various baudrates and options we can set trough the launch file
 * We also tested the LiDAR trough the node/Implementation from SLAMTEC (the business creating the Sensor) --> same Error
@@ -31,3 +31,8 @@
 ## Annex
 
 * Various Pictures and Videos we took, while doing the tests
+   * Error_Message_Timeout.jpeg --> Timeout Error-Message
+   * Error_Message_Healthcode.jpeg --> Healthcode 80008002 Error-Message
+   * LiDAR_on_rviz_own_ubuntu_env.jpeg --> working LiDAR and node inside own Ubuntu Environment (not Jetson Nano)
+   * LiDAR-Data_inside_Robostudio.jpeg --> working LiDAR inside Robostudio (Software from SLAMTEC)
+   * Video-LiDAR_inside_own_ubuntu_env.mp4 --> Video of the working LiDAR inside own Ubuntu Environment (not Jetson Nano) 
