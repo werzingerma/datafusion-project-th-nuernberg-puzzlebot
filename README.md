@@ -1,5 +1,17 @@
 # Puzzlebot --> LiDAR-Problem
 
+# SETUP
+* 1) Flashed from these Images provided:
+   * Nvidia Jetson 4gb Image: https://manchesterrobotics-my.sharepoint.com/:u:/g/personal/eduard_codres_manchester-robotics_com/ET8bZtYk8thJsWb1GBehkpoBBQ8UW8PlhDX8dgFgIoHmcA?e=Fksyxf
+   * Puzzlebot Firmware: https://manchesterrobotics-my.sharepoint.com/:u:/g/personal/eduard_codres_manchester-robotics_com/EVZnrkiEjHFMr-d6BLtXLdUBNPaJos3CCjApp74xyIY6Hw?e=GTLDon
+   * puzzlebot_ros Package: https://github.com/ManchesterRoboticsLtd/puzzlebot_ros
+* 2) Connect LiDAR to Jetson Nano Board (also Monitor trough HDMI, Keyboard and Mouse with USB + Ethernet-Cabel)
+* 3) Used Barrel-Plug or micro-USB for Energy-supply
+* 4) Changed Keyboard Layout to German from English --> Installed Language Package
+* 5) cd /dev --> ls --> to see if LiDAR is connected and to which USB-Port --> ttyUSB0
+* 6) sudo chmod 777 /dev/ttyUSB0
+* 7) started rplidar_node: ros2 launch rplidar_ros rplidar_a1_launch.py serial_baudrate:=115200    
+
 # Explanation
 * The Problem is that the Jetson Nano Board cant get Data from the conected LiDAR-Sensor. If connected and used trough ros2 with the Standard LiDAR-Node we get the Errors: TIMEOUT or Healthcode 80008002.
     * ros2 launch rplidar_ros rplidar_a1_launch.py serial_baudrate:=115200
