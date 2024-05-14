@@ -7,7 +7,7 @@
    * puzzlebot_ros Package: https://github.com/ManchesterRoboticsLtd/puzzlebot_ros
 * 2) Connect LiDAR to Jetson Nano Board (also Monitor trough HDMI, Keyboard and Mouse with USB + Ethernet-Cabel)
 * 3) Used Barrel-Plug or micro-USB for Energy-supply
-* 4) Changed Keyboard Layout to German from English --> Installed Language Package
+* 4) (Changed Keyboard Layout to German from English --> Installed Language Package)
 * 5) cd /dev --> ls --> to see if LiDAR is connected and to which USB-Port --> ttyUSB0
 * 6) sudo chmod 777 /dev/ttyUSB0
 * 7) started rplidar_node: ros2 launch rplidar_ros rplidar_a1_launch.py serial_baudrate:=115200    
